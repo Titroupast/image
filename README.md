@@ -51,8 +51,6 @@
    - **Choose a license (选择许可证):** (可选) 选择 `None`。
 4. 点击绿色的 “**Create repository**”（创建仓库）按钮。
 
-至此，你的 GitHub 图床仓库就搭建完成了！
-
 ------
 
 
@@ -104,10 +102,10 @@ PicGo 是一款开源的图片上传工具，它支持多种图床，其中就�
 
 
 
-1. 在 Vercel 控制台点击右上角 “**Add New**” → “**Project**”（新增 → 项目）。
-2. 在 “**Import Git Repository**”（导入 Git 仓库）页面，选择你的 GitHub 仓库（如 `image`），点击 “**Import**”（导入）。
-3. 在 “**New Project**”（新项目）页面，确认项目名称、团队、根目录（一般为 `./`），`Framework Preset` 选择 “**Other**”（其他），然后点击 “**Deploy**”（部署）完成部署。
-4. 部署完成后，直接访问你自己的 Vercel 项目域名下的 `/api/random` 路径即可获取一张随机图片。例如： `https://你的-vercel-项目名.vercel.app/api/random` 请将 `你的-vercel-项目名` 替换为你在 Vercel 部署时生成的实际项目名称。 每次访问该链接，都会自动跳转到你的图床中的一张随机图片，非常适合用作博客的随机背景图或其他需要随机图片的场景。
+1. 在 Vercel 控制台点击右上角 “**Add New**” → “**Project**”（新增 → 项目）。![d5938c1207541ebf6aeeadf371b05d3](C:\Users\cjl\Documents\WeChat Files\wxid_4n9mgtdvkb9422\FileStorage\Temp\d5938c1207541ebf6aeeadf371b05d3.png)
+2. 在 “**Import Git Repository**”（导入 Git 仓库）页面，选择你的 GitHub 仓库（如 `image`），点击 “**Import**”（导入）。![100a18bb359c69c095eca80be20cba3](C:\Users\cjl\Documents\WeChat Files\wxid_4n9mgtdvkb9422\FileStorage\Temp\100a18bb359c69c095eca80be20cba3.png)
+3. 在 “**New Project**”（新项目）页面，确认项目名称、团队、根目录（一般为 `./`），`Framework Preset` 选择 “**Other**”（其他），然后点击 “**Deploy**”（部署）完成部署。![0a852e1c17c8c3278be6b3c635304e8](C:\Users\cjl\Documents\WeChat Files\wxid_4n9mgtdvkb9422\FileStorage\Temp\0a852e1c17c8c3278be6b3c635304e8.png)
+4. 部署完成后，直接访问你自己的 Vercel 项目域名下的 `/api/random` 路径即可获取一张随机图片。例如： `https://你的-vercel-项目名.vercel.app/api/random` 请将 `你的-vercel-项目名` 替换为你在 Vercel 部署时生成的实际项目名称。 每次访问该链接，都会自动跳转到你的图床中的一张随机图片，非常适合用作博客的随机背景图或其他需要随机图片的场景。![image-20250721000352880](C:\Users\cjl\AppData\Roaming\Typora\typora-user-images\image-20250721000352880.png)
 
 
 
