@@ -1,0 +1,8 @@
+{
+  "name": "random-image-api", // 给您的 Worker 一个有意义的名称，例如 "random-image-api"
+  "main": "image/api/random.js", // **非常重要！** 这是您的 Worker 代码文件的路径
+  "compatibility_date": "2025-07-21", // 保持与当前日期一致或更新
+  "compatibility_flags": [
+    "nodejs_compat" // 如果您的 Worker 中使用了 Node.js 的 API (例如 `fetch`)，可能需要此兼容性标志
+  ]
+}
