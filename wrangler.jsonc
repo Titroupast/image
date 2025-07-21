@@ -1,6 +1,0 @@
-{
-  "name": "random-image-api", // 您的 Worker 名称
-  "main": "api/random.js", // **确保这个路径完全正确**
-  "compatibility_date": "2025-07-21", // 保持为当前日期
-  "compatibility_flags": ["nodejs_compat"]
-}
