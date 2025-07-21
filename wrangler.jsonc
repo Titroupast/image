@@ -1,0 +1,6 @@
+{
+  "name": "tuchuang", // 您的 Worker 名称
+  "main": "random.js", // **确保这个路径完全正确，指向修改后的random.js**
+  "compatibility_date": "2025-07-21",
+  "compatibility_flags": ["nodejs_compat"]
+}
