@@ -21,8 +21,50 @@ export default async function handler(req, res) {
 
     const idx = Math.floor(Math.random() * images.length);
     const url = `https://cdn.jsdelivr.net/gh/${owner}/${repo}@main/blog/${images[idx]}`;
-    res.writeHead(302, { Location: url });
-    res.end();
+    
+    // 返回HTML页面，每次刷新显示不同图片
+    res.setHeader('Content-Type', 'text/html');
+    res.end(`
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机图片</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('${url}') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .refresh-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .refresh-btn:hover {
+            background: rgba(0, 0, 0, 0.9);
+        }
+    </style>
+</head>
+<body>
+    <button class="refresh-btn" onclick="location.reload()">刷新换图</button>
+</body>
+</html>
+    `);
   } catch (e) {
     res.statusCode = 500;
     res.end('Failed to fetch images');
