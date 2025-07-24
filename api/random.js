@@ -43,25 +43,9 @@ export default async function handler(req, res) {
             align-items: center;
             font-family: Arial, sans-serif;
         }
-        .refresh-btn {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: rgba(0, 0, 0, 0.7);
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .refresh-btn:hover {
-            background: rgba(0, 0, 0, 0.9);
-        }
     </style>
 </head>
 <body>
-    <button class="refresh-btn" onclick="location.reload()">刷新换图</button>
 </body>
 </html>
     `);
